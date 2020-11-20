@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>PVT Freq Verification - 1</title>
+</head>
+
+<body>
+  <h1>Capital Frequency Verification</h1>
+  <h3>Capitals known: DC, LONDON, TOKYO, PARIS </h3>
+
+  <form method="post"  action="verifyfreq">
+    {% csrf_token %}
+    Capital: <input type="text" name="capital"><br/><br/>
+    Start Freq (MHz): <input type="text" name="startfreq"><br/><br/>
+    Stop Freq (MHz): <input type="text" name="stopfreq"></br><br/>
+    <button type="submit">Verify Frequency Range</button>
+  </form>
+</body>
+</html>
